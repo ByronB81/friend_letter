@@ -1,12 +1,12 @@
 require('sinatra')
 require('sinatra/reloader')
 
-get('/hello') do
+get('/') do
   '<!DOCTYPE html>
 <html>
 <head>
   <title>Hey there friend!</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 </head>
 <body>
   <h1>Hello from afar</h1>
@@ -20,4 +20,22 @@ get('/hello') do
   <p>Peaches & Cream!</p>
 </body>
 </html>'
+end
+
+get('/favorite_photos') do
+  '<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Hello Friend!</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+  <body>
+    <h1>Favorite Traveling Photos</h1>
+      <ul>
+        <li><img src='/img/canyon.jpg' alt='A photo of a canyon.'/></li>
+        <li><img src='/img/city.jpg' alt='A photo of a bridge.'/></li>
+        <li><img src='/img/mountains.jpg' alt='A photo of a mountain.'/></li>
+      </ul>
+  </body>
+  </html>'
 end
