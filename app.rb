@@ -5,6 +5,10 @@ get('/') do
   erb(:letter)
 end
 
+get('/australia') do
+  erb(:australia)
+end
+
 get('/favorite_photos') do
   '<!DOCTYPE html>
   <html>
